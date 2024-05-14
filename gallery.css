@@ -1,0 +1,54 @@
+/* 基本样式 */  
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 20px;  
+    background-color: #f2f2f2;  
+}  
+  
+header {  
+    text-align: center;  
+    margin-bottom: 20px;  
+}  
+  
+h1 {  
+    color: #333;  
+}  
+  
+main {  
+    max-width: 1000px;  
+    margin: 0 auto;  
+}  
+  
+.album {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-around;  
+}  
+  
+.photo {  
+    margin-bottom: 20px;  
+    text-align: center;  
+}  
+  
+.photo img {  
+    width: 200px; /* 根据需要调整图片大小 */  
+    height: auto;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}  
+  
+.photo p {  
+    margin-top: 10px;  
+    font-size: 16px;  
+    color: #666;  
+}  
+  
+footer {  
+    text-align: center;  
+    margin-top: 20px;  
+    color: #999;  
+}  
+  
+/* 额外样式，如添加一些装饰或动画效果（可选） */  
+/* ... */
