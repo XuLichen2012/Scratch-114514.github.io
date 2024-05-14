@@ -1,0 +1,45 @@
+/* styles.css */  
+  
+body {  
+    font-family: Arial, sans-serif; /* 设置字体 */  
+    margin: 0;  
+    padding: 20px;  
+    background-color: #f4f4f4; /* 浅灰色背景，增加层次感 */  
+    color: #333; /* 文本颜色 */  
+    text-align: center; /* 使内容在页面上居中 */  
+}  
+  
+.graduation-title {  
+    font-size: 3em; /* 设置字体大小 */  
+    font-weight: bold; /* 标题加粗 */  
+    color: #333; /* 设置字体颜色 */  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* 文字阴影，增加立体感 */  
+    margin: 0 0 20px; /* 移除默认的上下外边距，并添加一些下外边距 */  
+    padding: 10px 0; /* 添加内边距，增加空间感 */  
+    display: inline-block; /* 使其可以添加水平装饰线 */  
+    position: relative; /* 为了定位装饰线 */  
+}  
+  
+/* 可选：添加一些装饰性元素 */  
+.graduation-title::before,  
+.graduation-title::after {  
+    content: "";  
+    display: block;  
+    width: 50%; /* 装饰线宽度为标题宽度的50% */  
+    height: 2px;  
+    background-color: #ff5733; /* 装饰线颜色 */  
+    position: absolute; /* 相对于标题定位 */  
+    top: 50%; /* 垂直居中 */  
+    transform: translateY(-50%); /* 修正垂直居中的偏移 */  
+}  
+  
+.graduation-title::before {  
+    left: 0; /* 左边装饰线 */  
+}  
+  
+.graduation-title::after {  
+    right: 0; /* 右边装饰线 */  
+}  
+  
+/* 其他可能的样式（例如用于响应式设计或更多细节） */  
+/* ... */
