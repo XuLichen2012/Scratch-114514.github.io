@@ -1,141 +1,93 @@
 /* styles.css */  
   
 body {  
-    font-family: Arial, sans-serif; /* 设置字体 */  
+    font-family: Arial, sans-serif;  
     margin: 0;  
     padding: 20px;  
-    background-color: #f4f4f4; /* 浅灰色背景，增加层次感 */  
-    color: #333; /* 文本颜色 */  
-    text-align: center; /* 使内容在页面上居中 */  
+    background-color: #f4f4f4;  
+    color: #333;  
+    text-align: center;  
+}  
+  
+header {  
+    background-color: #fff;  
+    border-bottom: 1px solid #ddd;  
+    padding: 20px 0;  
+    text-align: left; /* 让内容左对齐，因为导航栏通常在左上角开始 */  
 }  
   
 .graduation-title {  
-    font-size: 3em; /* 设置字体大小 */  
-    font-weight: bold; /* 标题加粗 */  
-    color: #333; /* 设置字体颜色 */  
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* 文字阴影，增加立体感 */  
-    margin: 0 0 20px; /* 移除默认的上下外边距，并添加一些下外边距 */  
-    padding: 10px 0; /* 添加内边距，增加空间感 */  
-    display: inline-block; /* 使其可以添加水平装饰线 */  
-    position: relative; /* 为了定位装饰线 */  
+    font-size: 3em;  
+    font-weight: bold;  
+    color: #333;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);  
+    margin: 0 0 20px;  
+    padding: 10px 0;  
+    display: inline-block;  
+    position: relative;  
 }  
   
-/* 可选：添加一些装饰性元素 */  
 .graduation-title::before,  
 .graduation-title::after {  
-    content: "";  
-    display: block;  
-    width: 50%; /* 装饰线宽度为标题宽度的50% */  
-    height: 2px;  
-    background-color: #ff5733; /* 装饰线颜色 */  
-    position: absolute; /* 相对于标题定位 */  
-    top: 50%; /* 垂直居中 */  
-    transform: translateY(-50%); /* 修正垂直居中的偏移 */  
+    /* ... 装饰线样式保持不变 ... */  
 }  
   
-.graduation-title::before {  
-    left: 0; /* 左边装饰线 */  
-}  
-  
-.graduation-title::after {  
-    right: 0; /* 右边装饰线 */  
-}  
-
-/* styles.css */  
-  
-/* 基本样式 */  
-body {  
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",  
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",  
-      sans-serif; /* 跨浏览器字体系列 */  
-    margin: 0;  
-    padding: 20px;  
-    background-color: #f4f4f4; /* 浅灰色背景 */  
-    color: #333; /* 文本颜色 */  
-    text-align: center; /* 内容居中 */  
-}  
-  
-/* 标题样式 */  
-.graduation-title {  
-    font-size: 3em; /* 字体大小 */  
-    font-weight: 700; /* 加粗 */  
-    color: #333; /* 文本颜色 */  
-    text-transform: uppercase; /* 文本转换为大写 */  
-    letter-spacing: 0.1em; /* 字符间距 */  
-    margin: 0 0 20px; /* 上下外边距 */  
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* 文字阴影 */  
-}  
-  
-/* 可选：添加一些装饰性元素 */  
-.graduation-title::before,  
-.graduation-title::after {  
-    content: "";  
-    display: block;  
-    width: 100%;  
-    height: 2px;  
-    background-color: #ff5733; /* 装饰线颜色 */  
-    margin: 10px auto; /* 上下外边距，水平居中 */  
-}  
-  
-/* styles.css */  
-  
-/* ...之前的样式... */  
-
-/* 导航栏样式 */  
 .navbar {  
-    list-style-type: none; /* 移除列表默认的样式 */  
+    list-style-type: none;  
     margin: 0;  
     padding: 0;  
-    display: flex; /* 使用Flexbox来水平排列列表项 */  
-    justify-content: center; /* 水平居中 */  
-    align-items: center; /* 垂直居中（如果导航栏有高度的话）*/  
-    background-color: #fff; /* 导航栏背景色 */  
-    height: 60px; /* 导航栏高度 */  
-    border-bottom: 1px solid #ddd; /* 添加下边框 */  
+    display: flex;  
+    justify-content: flex-start; /* 导航栏左对齐 */  
 }  
   
 .navbar li {  
-    position: relative; /* 为了定位装饰线或其他元素 */  
-    margin: 0 10px; /* 列表项之间的间距 */  
+    margin-right: 10px; /* 列表项之间的间距 */  
 }  
   
 .navbar li a {  
-    color: #333; /* 链接颜色 */  
-    text-decoration: none; /* 移除下划线 */  
-    display: block; /* 使链接占据整个列表项的空间 */  
-    padding: 10px 20px; /* 垂直和水平内边距 */  
-    transition: color 0.3s, background-color 0.3s; /* 添加过渡效果 */  
+    color: #333;  
+    text-decoration: none;  
+    padding: 10px 0;  
+    display: block;  
+    transition: color 0.3s; /* 添加过渡效果 */  
 }  
   
 .navbar li a:hover {  
-    color: #ff5733; /* 链接悬停时的颜色 */  
-    background-color: rgba(255, 87, 51, 0.1); /* 链接悬停时的背景色 */  
-}  
-  
-/* 活动链接样式 */  
-.navbar li.active a {  
     color: #ff5733;  
-    font-weight: bold; /* 加粗显示 */  
 }  
   
-/* 可选的装饰线效果 */  
-.navbar li.active::after {  
-    content: '';  
+main {  
+    margin: 20px 0; 
+    text-align: left;
+}  
+  
+img {  
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}  
+  
+footer {  
+    background-color: #fff;  
+    border-top: 1px solid #ddd;  
+    padding: 20px 0;  
+    text-align: center;
+}  
+  
+small {  
     display: block;  
-    width: 100%; /* 宽度为列表项宽度 */  
-    height: 2px;  
-    background-color: #ff5733;  
-    position: absolute;  
-    bottom: 0; /* 装饰线位于列表项底部 */  
-    left: 0;  
+    text-align: center;  
+    margin-top: 10px;  
+    font-size: 0.8em;  
+    color: #999;  
 }  
   
-/* 响应式设计 */  
-@media (max-width: 768px) {  
+	@media (max-width: 768px) {  
     .navbar li {  
         margin: 0 5px; /* 减小小屏幕上的间距 */  
     }  
     .navbar li a {  
         padding: 10px 10px; /* 减小小屏幕上的内边距 */  
     }  
-}
+  }
