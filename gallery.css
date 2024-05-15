@@ -48,7 +48,28 @@ footer {
     text-align: center;  
     margin-top: 20px;  
     color: #999;  
+} 
+
+.album {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh; /* 或者其他你想要的高度 */  
+    background-color: #f5f5f5; /* 背景色 */  
 }  
+  
+.photo {  
+    margin: 10px; /* 外边距 */  
+    padding: 10px; /* 内边距 */  
+    border: 1px solid #ccc; /* 边框 */  
+    border-radius: 5px; /* 边框圆角 */  
+    text-align: center; /* 文本居中 */  
+}  
+  
+.photo img {  
+    max-width: 100%; /* 确保图片不会超出其容器 */  
+    height: auto; /* 保持图片的原始纵横比 */  
+}
   
 /* 额外样式，如添加一些装饰或动画效果（可选） */  
 /* ... */
